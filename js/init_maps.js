@@ -10,11 +10,16 @@ function initMaps() {
   drawCyclingLayer();
 }
 
+function init() {
+  initMaps();
+  initAutocomplete();
+}
+
 function drawCyclingLayer() {
   var cyclingLayer = new google.maps.BicyclingLayer();
   cyclingLayer.setMap(map);
 }
 
-google.maps.event.addDomListener(window, 'load', initMaps);
+google.maps.event.addDomListener(window, 'load', init);
 
 

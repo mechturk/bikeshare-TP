@@ -7,13 +7,18 @@
       body { height: 100%; margin: 0; padding: 0 }
       #map-canvas { height: 100% }
     </style>
-    <link rel="stylesheet" type="text/css" href="css/infobox.css">
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={API_KEY}"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key={API_KEY}"></script>
     <script type="text/javascript" src="js/init_maps.js"></script>
     <script type="text/javascript" src="js/bikeshare.js"></script>
+    <script type="text/javascript" src="js/autocomplete.js"></script>
 
   </head>
   <body>
-    <div id="map-canvas"/>
+    <div class="searchBar">
+      <div>A: <input type="text" id="inputA" size="50"></input></div>
+      <div>B: <input type="text" id="inputB" size="50"></input></div>
+    </div>
+    <div id="map-canvas"></div>
   </body>
 </html>
